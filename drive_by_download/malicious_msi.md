@@ -28,7 +28,7 @@ Behavior is consistent with drive‑by malware delivery
 
 4. Network Telemetry (Splunk)
 DNS logs confirmed that outbound queries to the malicious domain were allowed:
-205.243.112.229 → anydesignpoint[.]com
+123.456.789.101 → anydesignpoint[.]com
 
 5. Endpoint Telemetry (SentinelOne)
 Searches for related DNS and URL activity returned no matching events, indicating:
