@@ -1,0 +1,39 @@
+{
+    "indicators_of_compromise": {
+        "domains": [
+            "extstudios.com",
+            "anydesignpoint.com"
+        ],
+        "file_hashes": {
+            "sha256": "82085737c91fc2b6d669eace915c8dc7d11718210f8e6e5d9e59a2abb6ce3b45",
+            "sha1": "69ade388cabf3c7b5b48ad85cc2b13f2a2211822"
+        }
+    },
+    "mitre_attack_techniques": [
+        {
+            "id": "T1566.002",
+            "name": "Phishing: Drive-by Download",
+            "tactic": "Initial Access"
+        },
+        {
+            "id": "T1189",
+            "name": "Drive-by Compromise",
+            "tactic": "Initial Access"
+        },
+        {
+            "id": "T1204.002",
+            "name": "User Execution: Malicious File",
+            "tactic": "Execution"
+        },
+        {
+            "id": "T1071",
+            "name": "Application Layer Protocol",
+            "tactic": "Command and Control"
+        },
+        {
+            "id": "T1036",
+            "name": "Masquerading",
+            "tactic": "Defense Evasion"
+        }
+    ]
+}
